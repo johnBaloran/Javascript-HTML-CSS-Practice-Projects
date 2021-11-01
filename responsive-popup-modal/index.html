@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Responsive Modal Popup</title>
+  </head>
+  <body>
+    <section class="modal container">
+      <button class="modal__button" id="open-modal">Open Modal</button>
+      <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+          <div class="modal__close">
+            <i class="bx bx-x"></i>
+          </div>
+          <img src="./assets/star-trophy.png" alt="" class="modal__img" />
+
+          <h1 class="modal__title">Good Job!</h1>
+          <p class="modal__description">Click the button to close</p>
+
+          <button class="modal__button modal__button-width">View Status</button>
+          <button class="modal__button-link">Close</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
