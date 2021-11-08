@@ -1,4 +1,4 @@
-const apiKey = "43e5c6f82762450d8b2df5e84351074e";
+const apiKey = "914e2817b56c4dc48483a6c50bb886ac";
 const searchForm = document.querySelector("form");
 const listOfRecipes = document.querySelector(".search-results");
 
@@ -45,7 +45,7 @@ const availablerecipes = (results) => {
 };
 
 const recipeWebsiteLink = async (result, dish) => {
-  const baseURL = `https://api.spoonacular.com/recipes/${result.id}/information?apiKey=43e5c6f82762450d8b2df5e84351074e`;
+  const baseURL = `https://api.spoonacular.com/recipes/${result.id}/information?apiKey=${apiKey}`;
   const response = await fetch(baseURL);
   const data = await response.json();
   console.log(data);
@@ -53,15 +53,3 @@ const recipeWebsiteLink = async (result, dish) => {
   <a href=${data.sourceUrl} target="_blank"> <img src="${result.image}" alt="${result.title}"></a>
 </div>`;
 };
-
-// console.log(websiteLink(640676));
-
-// https://api.spoonacular.com/recipes/findByIngredients
-
-// https://api.spoonacular.com/recipes/findByIngredients?ingredients=apples,+flour,+sugar&number=2
-
-// https://api.spoonacular.com/recipes/716429/information?apiKey=YOUR-API-KEY&includeNutrition=true.
-
-// https://api.spoonacular.com/recipes/641890/information?apiKey=43e5c6f82762450d8b2df5e84351074e
-
-// https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=chicken,+bacon,+egg,+avocado+cheese&number=1000
